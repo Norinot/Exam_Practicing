@@ -1,0 +1,16 @@
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\bin\Debug\net5.0\Exam_Practice.exe
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\bin\Debug\net5.0\Exam_Practice.deps.json
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\bin\Debug\net5.0\Exam_Practice.runtimeconfig.json
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\bin\Debug\net5.0\Exam_Practice.runtimeconfig.dev.json
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\bin\Debug\net5.0\Exam_Practice.dll
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\bin\Debug\net5.0\ref\Exam_Practice.dll
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\bin\Debug\net5.0\Exam_Practice.pdb
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\obj\Debug\net5.0\Exam_Practice.csprojAssemblyReference.cache
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\obj\Debug\net5.0\Exam_Practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\obj\Debug\net5.0\Exam_Practice.AssemblyInfoInputs.cache
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\obj\Debug\net5.0\Exam_Practice.AssemblyInfo.cs
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\obj\Debug\net5.0\Exam_Practice.csproj.CoreCompileInputs.cache
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\obj\Debug\net5.0\Exam_Practice.dll
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\obj\Debug\net5.0\ref\Exam_Practice.dll
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\obj\Debug\net5.0\Exam_Practice.pdb
+C:\Users\narut\Desktop\Exam_Practice\Exam_Practicing\Exam_Practice\Exam_Practice\obj\Debug\net5.0\Exam_Practice.genruntimeconfig.cache
