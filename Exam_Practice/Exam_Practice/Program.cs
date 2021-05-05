@@ -8,96 +8,56 @@ namespace Exam_Practice
 {
     class Program
     {
-        public static List<string> Unsuccessfull = new List<string>();
-        public static List<string> Successfull = new List<string>();
-
+        public static List<int> TempFSort = new List<int>();
+        public static List<int> Tmp2 = new List<int>();
+        public static Dictionary<int, string> OfAll = new Dictionary<int, string>();
         static void Main(string[] args)
         {
-            ReadUnSuc();
-            ReadSuc();
-            SumUnSucc();
-            SumSucc();
+            Read();
+            faszomtudja();
         }
-        public static void SumSucc()
+        public static void Read()
         {
+            StreamReader ReadS = new StreamReader("sikeres.txt",Encoding.UTF8);
+            StreamReader ReadU = new StreamReader("sikertelen.txt",Encoding.UTF8);
 
-            for (int i = 1; i < Successfull.Count; i++)
-            {
-                string[] SplitSuc = Successfull[i].Split(';');
-                int Summed = 0;
-                for (int j = 1; j < SplitSuc.Length; j++)
-                {
-                    Summed += Convert.ToInt32(SplitSuc[j]);
-                }
-                int TmpSum = Summed;
-                Summed = 0;
-                if (i == 1)
-                {
-                    Console.WriteLine("Angol:{0}", TmpSum);
-                }
-                else if (i == 2)
-                {
-                    Console.WriteLine("Arab:{0}", TmpSum);
-                }
-                else if (i == 3)
-                {
-                    Console.WriteLine("Bolgár:{0}", TmpSum);
-                }
-                else if (i == 4)
-                {
-                    Console.WriteLine("Cigány:{0}", TmpSum);
-                }
-            }
-        }
-        public static void SumUnSucc()
-        {
+            ReadS.ReadLine();
+            ReadU.ReadLine();
             
-            for (int i = 1; i < Unsuccessfull.Count; i++)
+            while (!ReadS.EndOfStream)
             {
-                string[] SplitUnSuc = Unsuccessfull[i].Split(';');
-                int Summed = 0;
-                for (int j = 1; j < SplitUnSuc.Length; j++)
+                string[] split = ReadS.ReadLine().Split(';');
+                int x = 0;
+                for (int i = 1; i < split.Length; i++)
                 {
-                        Summed += Convert.ToInt32(SplitUnSuc[j]);
-                }
-                
-                int TmpSum = Summed;
-                Summed = 0;
-                if (i == 1)
-                {
-                    Console.WriteLine("Angol:{0}", TmpSum);
-                }
-                else if (i == 2)
-                {
-                    Console.WriteLine("Arab:{0}", TmpSum);
-                }
-                else if (i == 3)
-                {
-                    Console.WriteLine("Bolgár:{0}", TmpSum);
-                }
-                else if (i == 4)
-                {
-                    Console.WriteLine("Cigány:{0}", TmpSum);
+                    x = Convert.ToInt32(split[i]);
+                    Tmp2.Add(x);
                 }
             }
+            int tmp = 0;
+            while (!ReadU.EndOfStream)
+            {
+                string[] split = ReadU.ReadLine().Split(';');
+                int x = 0;
+                for (int i = 1; i < split.Length; i++)
+                {
+                    x = Convert.ToInt32(split[i]) + Tmp2[tmp];
+                }
+                OfAll.Add(x, split[0]);
+                tmp++;
+            }
+            
         }
-        public static void ReadUnSuc()
+        public static void faszomtudja()
         {
-            StreamReader ReadIn = new StreamReader("sikertelen.txt", Encoding.UTF8);
-            while (!ReadIn.EndOfStream)
+            TempFSort = OfAll.Keys.ToList();
+            TempFSort.Sort();
+            TempFSort.Reverse();
+            for (int i = 0; i < 3; i++)
             {
-                Unsuccessfull.Add(ReadIn.ReadLine());
+                Console.WriteLine(Convert.ToString(TempFSort[i]));
             }
-            ReadIn.Close();
-        }
-        public static void ReadSuc()
-        {
-            StreamReader ReadIn = new StreamReader("sikeres.txt",Encoding.UTF8);
-            while (!ReadIn.EndOfStream)
-            {
-                Successfull.Add(ReadIn.ReadLine());
-            }
-            ReadIn.Close();
+            Console.ReadLine();
         }
     }
 }
